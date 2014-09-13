@@ -10,44 +10,49 @@
 
         <h1>Kontakt</h1>
         
-        <p>Da Sing Trinh:s Kursblogg för webbprogrammering</p>
+            <p>Da Sing Trinh:s Kursblogg för webbprogrammering</p>
     
-        <ul>
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="laborationer.html">Laborationer</a></li>
-            <li><a href="presentation.html">Presentation</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
+            <ul>
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="laborationer.html">Laborationer</a></li>
+                <li><a href="presentation.html">Presentation</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
         
-        <form id="form" method="post">
+        <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" id="form" method="post">
         
             <fieldset>
-                <legend>Fråga</legend>
+                <legend>Ärende</legend>
                 
-                    <label for=""></label>
-                    <input type="text" name="ad" />
-                    
-                    <label for="epost">Rubrik</label>
-                    <input type="email" name="epost" />
+                <label for="typ">Ärendetyp<select name="arendetyp">
+                    <option value="fraga">Fråga</option>
+                    <option value="tips">Tips</option></select></label><br />
+                
+                <label for="rubrik">Rubrik:<input type="text" name="rubrik" /></label><br />
+                <label for="text">Skriv här:</label><br />
+                <textarea name="text" rows="3" cols="30"></textarea>
             </fieldset>
             
             <fieldset>
                 <legend>Information om dig</legend>
                 
+                    <label for="namn">Namn:<input type="text" name="namn" /></label><br />
+                    <label for="epost">Epost:</label> <input type="email" name="epost" /><br />
+                    <label for="telefon">Telefon:</label> <input type="text" name="telefon" /><br />
                     
-                    <dt><label for="namn">Namn:</label>
-                    <input type="text" id="namn" name="namn"/></dt>
-                    
-                    <label for="epost">Epost:</label>
-                    <input type="email" name="epost"/>
-                    
+                    <fieldset>
+                        <legend>Kontakta mig via</legend>
+                        
+                        <label for="epost"><input type="checkbox" name="epost" />Epost</label>
+                        <label for="telefon"><input type="checkbox" name="telefon" />Telefon</label>
+                    </fieldset>
             </fieldset>
-             
-                <input type="submit" value="Skicka frågan" />
-        
-           
+
+            <input type="submit" value="Skicka!" />
+            
         </form>
         
+        <p><small>Ansvarig för materialet på denna sida är <em>Da Sing Trinh</em>.</small></p>
         
     </body>
     
