@@ -38,9 +38,6 @@ Colors      Turkos
 #94E9D4     Body background
 */
 
-body {
-    background-color: #94E9D4;
-}
 
 dd {
     background-color: #629CB2;
@@ -125,6 +122,10 @@ dd {
 
 .section {
     border-top: dashed;
+}
+
+.rightalign {
+    text-align: right;
 }
 
 .rubrik1 {
