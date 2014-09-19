@@ -1,10 +1,3 @@
-/*
-Colors
-#FF6600     Orange
-#0099FF     SkyBlue
-#005C99     DarkerBlue
-#5F98BF     LighterBlue
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -36,18 +29,21 @@ Colors
 /*	display: block;*/
 /*}*/
 
+/*
+Colors      Blueish
+#001821     Darker
+#012E3F     Dark    
+#3891B2     Light
+#629CB2     Lighter
+*/
+
+body {
+    background-color: #629CB2;
+}
 
 
-
-
-/*body {*/
-/*    margin:0;*/
-/*    font-size: 1em;*/
-/*}*/
-
-
-a:link, a:visited {
-    color: blue;
+a {
+    color: #001821;
 }
 
 a:focus {
@@ -70,24 +66,26 @@ a:active {
 
 #header {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #3891B2;
+    color: #012E3F;
     padding: 3px;
 }
 
 #footer {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #3891B2;
+    color: #012E3F;
     padding: 3px;
 }
 
 #nav {
     float: left;
-    width: 160px;
+    width: 140px;
+    height: 400px;
 }
 
 #content {
+    background-color: white;
     margin-left: 160px;
 }
 
