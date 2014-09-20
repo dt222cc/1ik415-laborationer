@@ -103,15 +103,11 @@ a:focus {
 }
 
 #mig {
-    float: left;
+    float: right;
 }
 
 #cloud {
     float: right;
-}
-
-.info {
-    margin-left: 200px;
 }
 
 .section {

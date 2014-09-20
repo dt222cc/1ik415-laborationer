@@ -20,42 +20,43 @@
             </div>
             
             <div id="content">
+            
                 <h2 class="rubrik">Kontakt formulär</h2>
                 
-                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" id="form" method="post">
-                    
-                    <fieldset>
-                        <legend>Ärende</legend>
+                <div class="section">
+                    <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" id="form" method="post">
                         
-                            <label>Ärendetyp <select name="arendetyp">  <!-- Är det ok att använda åäö? för "name" och "value" -->
-                                <option value="fraga">Fråga</option>
-                                <option value="tips">Tips</option></select>
-                            </label><br />
-                        
-                        <label>Rubrik:<input type="text" name="rubrik" /></label><br />
-                        <label>Skriv här:</label><br />
-                        <textarea name="text" rows="3" cols="30"></textarea>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <legend>Information om dig</legend>
-                        
-                            <label>Namn:<input type="text" name="namn" /></label><br />
-                            <label>Epost:<input type="email" name="epost" /></label><br />
-                            <label>Telefon:<input type="text" name="telefon" /></label><br />
+                        <fieldset>
+                            <legend>Ärende</legend>
                             
-                            <fieldset>
-                                <legend>Kontakta mig via</legend>
+                                <label>Ärendetyp <select name="arendetyp">  <!-- Är det ok att använda åäö? för "name" och "value" -->
+                                    <option value="fraga">Fråga</option>
+                                    <option value="tips">Tips</option></select>
+                                </label><br />
+                            
+                            <label>Rubrik:<input type="text" name="rubrik" /></label><br />
+                            <label>Skriv här:</label><br />
+                            <textarea name="text" rows="3" cols="30"></textarea>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Information om dig</legend>
+                            
+                                <label>Namn:<input type="text" name="namn" /></label><br />
+                                <label>Epost:<input type="email" name="epost" /></label><br />
+                                <label>Telefon:<input type="text" name="telefon" /></label><br />
                                 
-                                <label>Epost<input type="checkbox" name="via epost" /></label>
-                                <label>Telefon<input type="checkbox" name="via telefon" /></label>
-                            </fieldset>
-                    </fieldset>
-        
-                    <input type="submit" value="Skicka!" />
-                    
-                </form>
-                
+                                <fieldset>
+                                    <legend>Kontakta mig via</legend>
+                                    
+                                    <label>Epost<input type="checkbox" name="via epost" /></label>
+                                    <label>Telefon<input type="checkbox" name="via telefon" /></label>
+                                </fieldset>
+                        </fieldset>
+            
+                        <input type="submit" value="Skicka!" />
+                    </form>
+                </div>
             </div>
             
             <div id="footer">
