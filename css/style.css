@@ -6,6 +6,16 @@ Colors      Turkos
 #3891B2     Header-, Footer background
 #629CB2     Container background
 #94E9D4     Body background
+
+--Att göra--
+
++ kanske en ikon som scrollar till toppen (bottom right corner)
++ fixa ytan längst upp (bort med det vita)
++ jobba med tabellen
++ en bakgrundsbild kanske? istället för det vita (ogillar inte precis det vita, så jag kanske skippar bakgrundsbild)
++ jobba med formulären
++
+
 */
 
 
@@ -108,10 +118,28 @@ a:focus {
     border-top: dashed;
 }
 
+.post {
+    border-top: dashed;
+    background-image: url(pics/pen_o.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 50px 50px;
+}
+
+.post h2{
+    padding-left: 40px;
+}
+
 .rightalign {
     text-align: right;
 }
 
 .rubrik {
     color: #3891B2;
+}
+
+body {
+    background-image: url(pics/starry_frame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
