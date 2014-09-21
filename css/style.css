@@ -5,16 +5,12 @@ Colors      Turkos
 #012E3F     Text color
 #3891B2     Header-, Footer background
 #629CB2     Container background
-#94E9D4     Body background
+#84b2c3     Table background
 
 --Att göra--
 
 + kanske en ikon som scrollar till toppen (bottom right corner)
-+ fixa ytan längst upp (bort med det vita)
-+ jobba med tabellen
-+ en bakgrundsbild kanske? istället för det vita (ogillar inte precis det vita, så jag kanske skippar bakgrundsbild)
 + jobba med formulären
-+
 
 */
 
@@ -143,4 +139,27 @@ body {
 .left {
     float: left;
     padding-right: 10px;
+}
+
+table, td, th {
+    padding: 5px;
+    border: 1px solid #629CB2;
+    text-align: center;
+}
+
+th {
+    background-color: #629CB2;
+}
+
+.alt {
+    background-color: #84b2c3;
+}
+
+tfoot {
+    background-color: #629CB2;
+}
+
+.rowspan {
+    font-size: 1.5em;
+    background-color: white;
 }
