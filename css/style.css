@@ -131,9 +131,7 @@ a:focus {
 }
 
 body {
-    background-image: url(pics/starry_frame.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(pics/blue_white_stripes.jpg);
 }
 
 .left {
