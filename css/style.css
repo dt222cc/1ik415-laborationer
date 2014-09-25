@@ -10,7 +10,6 @@ Colors      Turkos
 --Att göra--
 
 + kanske en ikon som scrollar till toppen (bottom right corner)
-+ jobba med formulären
 
 */
 
@@ -37,7 +36,7 @@ a:focus {
 #header {
     width: 965px;
     background-color: #3891B2;
-    color: #012E3F;
+    color: black;
     font-size: 200%;
     text-align: center;
 }
@@ -50,37 +49,34 @@ a:focus {
     font-size: 150%;
 }
 
-#nav ul{
+#nav ul {
     float: left;
     width: 140px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-#menu {
     border: 1px solid black;
     border-bottom: none;
     display: block;
 }
 
-#menu li {
+#nav li {
     border-bottom: 1px solid black;
 }
 
 
-#menu a {
+#nav a {
    display: block;
    padding: 10px;
    color: black;
 }
 
-#menu a:hover {
+#nav a:hover {
    background-color: black;
    color: white;
 }
 
-#menu a:focus {
+#nav a:focus {
     background-color: black;
     color: white;
 }
@@ -97,7 +93,7 @@ a:focus {
     padding: 10px;
     margin-right: auto;
 }
-
+/*Sätter bilderna på högra sidan*/
 #mig {
     float: right;
 }
@@ -105,11 +101,11 @@ a:focus {
 #cloud {
     float: right;
 }
-
+/*Varje inlägg har dashed på toppen*/
 .section {
     border-top: dashed;
 }
-
+/*Blogginlägg har en bildikon åt vänster om rubriktexten*/
 .post {
     border-top: dashed;
     background-image: url(pics/pen_o.png);
@@ -117,28 +113,33 @@ a:focus {
     background-position: top left;
     background-size: 50px 50px;
 }
-
+/*Behövde flytta texten lite åt höger för att få det att funka*/
 .post h2{
     padding-left: 50px;
 }
-
+/*Höger justerar "skrivet av..."*/
 .rightalign {
     text-align: right;
 }
-
+/*h1 rubrikerna på sidorna förutom headern*/
 .rubrik {
     color: #3891B2;
 }
-
+/*formulär rubrik*/
+.form {
+    color: #3891B2;
+    text-align: center;
+}
+/*Bakgrundsfärg*/
 body {
     background-image: url(pics/blue_white_stripes.jpg);
 }
-
-.left {
+/*Loren ipsum bilden*/
+.boatcastle {
     float: left;
     padding-right: 10px;
 }
-
+/*Min tabell*/
 table, td, th {
     padding: 5px;
     border: 1px solid #629CB2;
@@ -148,7 +149,7 @@ table, td, th {
 th tfoot{
     background-color: #629CB2;
 }
-
+/*varannan rad i tabellen*/
 .alt {
     background-color: #84b2c3;
 }

@@ -1,0 +1,25 @@
+/*Ändrar textfärger till svart och borders till vit*/
+#header, #footer, #content, .rubrik, .section, .form, td, th {
+    color: black;
+    border-color: white;
+}
+
+table {
+    border-color: black;
+}
+
+/*Tar även bort linjen under länkarna*/
+a, a:after {
+    color: black;
+    text-decoration: none;
+}
+
+/*Visar länken efter länktexten enbart på presentation sidan*/
+.after a:after {
+    content:" (" attr(href) ") ";
+}
+
+/*Döljer navigationen, video och headern*/
+#nav, video, #header{
+    display:none;
+}
