@@ -145,7 +145,7 @@ table, td, th {
     text-align: center;
 }
 
-th {
+th tfoot{
     background-color: #629CB2;
 }
 
@@ -153,11 +153,23 @@ th {
     background-color: #84b2c3;
 }
 
-tfoot {
-    background-color: #629CB2;
-}
-
 .rowspan {
     font-size: 1.5em;
     background-color: white;
+}
+
+form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+fieldset {
+    background-color: #84b2c3;
+    border: 1px solid #629CB2;
+    
+}
+
+legend {
+    background-color: #629CB2;
+    font-size: 1.2em;
 }
