@@ -31,6 +31,8 @@ p {
 /* Descriptionlist, dd */
 dd {
     background-color: #629CB2;
+    display:inline;
+    margin-left: 100px;
 }
 
 /* Färg på länktext */
@@ -104,7 +106,7 @@ a:focus {
     }
     
     /* Nuvarande sida */
-    .active {
+    #nav .active {
         background-color: white;
         color: black;
     }
@@ -215,22 +217,23 @@ legend {
     background-repeat: no-repeat;
 }
 
-#start a:hover {
-    background: url(pics/sprite.png);
+/* Lol, satt och försökte få det att funka med a'et ivägen */
+#start:hover {
+    background: url(pics/sprite.png) 10px 10px;
     background-repeat: no-repeat;
 }
 
-#lab a:hover {
-    background: url(pics/sprite.png);
+#lab:hover {
+    background: url(pics/sprite.png) 10px -86px;
     background-repeat: no-repeat;
 }
 
-#presentation a:hover {
-    background: url(pics/sprite.png);
+#presentation:hover {
+    background: url(pics/sprite.png) 10px -181px;
     background-repeat: no-repeat;
 }
 
-#kontakt a:hover {
-    background: url(pics/sprite.png);
+#kontakt:hover {
+    background: url(pics/sprite.png) 10px -277px;
     background-repeat: no-repeat;
 }
