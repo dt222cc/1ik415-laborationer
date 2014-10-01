@@ -1,0 +1,27 @@
+/* CSS Mall för smartphones, mindre än 481px bredd. */
+
+#container {
+    max-width: 480px;
+}
+/*----------*/
+#header {
+    width: 100%;
+    font-size: 22px;
+}
+
+/*----------*/
+#content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+/*----------*/
+#footer {
+    width: 100%;
+    font-size: 17px;
+    font-style: italic;
+}

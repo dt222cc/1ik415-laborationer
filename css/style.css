@@ -18,7 +18,6 @@ p {
     line-height: 28px;
 }
 
-/* h1 rubrikerna på sidorna förutom headern */
 .rubrik {
     color: #3891B2;
 }
@@ -35,25 +34,24 @@ dd {
     margin-left: 100px;
 }
 
-/* Färg på länktext */
+/* LINKS */
 a {
     color: #012E3F;
 }
 
-/* När man tabbar genom länkarna. */
 a:focus {
     background-color: black;
     color: white;
 }
 
-/* Layout */
+/* BASEN */
 #container {
     width: 965px;
     background-color: #629CB2;
     margin: 0 auto;
 }
     
-/* 1.Top */
+/* HEADER */
 #header {
     width: 965px;
     margin-bottom: 50px;
@@ -63,7 +61,7 @@ a:focus {
     text-align: center;
 }
 
-/* 2.Bot */
+/* FOOTER */
 #footer {
     width: 965px;
     background-color: #3891B2;
@@ -71,7 +69,7 @@ a:focus {
     text-align: center;
 }
     
-/* 3.Menu */
+/* MENY */
 #nav ul {
     float: left;
     list-style-type: none;
@@ -105,13 +103,53 @@ a:focus {
         color: white;
     }
     
-    /* Nuvarande sida */
     #nav .active {
         background-color: white;
         color: black;
     }
 
-/* 4.Content */
+/* Sprites i menyn */
+#start {
+    background: url(pics/sprite.png) 10px -38px;
+    background-repeat: no-repeat;
+}
+
+#lab {
+    background: url(pics/sprite.png) 10px -134px;
+    background-repeat: no-repeat;
+}
+
+#presentation {
+    background: url(pics/sprite.png) 10px -229px;
+    background-repeat: no-repeat;
+}
+
+#kontakt {
+    background: url(pics/sprite.png) 10px -325px;
+    background-repeat: no-repeat;
+}
+
+#start:hover {
+    background: url(pics/sprite.png) 10px 10px;
+    background-repeat: no-repeat;
+}
+
+#lab:hover {
+    background: url(pics/sprite.png) 10px -86px;
+    background-repeat: no-repeat;
+}
+
+#presentation:hover {
+    background: url(pics/sprite.png) 10px -181px;
+    background-repeat: no-repeat;
+}
+
+#kontakt:hover {
+    background: url(pics/sprite.png) 10px -277px;
+    background-repeat: no-repeat;
+} /* MENY STOPP */ 
+
+/* INNEHÅLL */
 #content {
     background-color: white;
     margin-left: 144px;
@@ -139,7 +177,7 @@ a:focus {
         padding-left: 50px;
     }
 
-/* Bilder */
+/* BILDER */
 #mig {
     float: right;
     margin-top: 10px;
@@ -149,13 +187,12 @@ a:focus {
     float: right;
 }
 
-/* Loren ipsum bilden */
 #boatcastle {
     float: left;
     padding-right: 10px;
 }
 
-/* Tabellen */
+/* TABELL */
 table, td, th {
     padding: 5px;
     border: 1px solid #629CB2;
@@ -172,7 +209,7 @@ th tfoot{
     background-color: white;
 }
 
-/* Formulären */
+/* FORMULÄR */
 form {
     width: 450px;
     margin: 0 auto;
@@ -190,50 +227,7 @@ legend {
     font-size: 1.2em;
 }
 
-/* Formulär rubrik */
 .form {
     color: #3891B2;
     text-align: center;
-}
-
-/* Sprites */
-#start {
-    background: url(pics/sprite.png) 10px -38px;
-    background-repeat: no-repeat;
-}
-
-#lab {
-    background: url(pics/sprite.png) 10px -134px;
-    background-repeat: no-repeat;
-}
-
-#presentation {
-    background: url(pics/sprite.png) 10px -229px;
-    background-repeat: no-repeat;
-}
-
-#kontakt {
-    background: url(pics/sprite.png) 10px -325px;
-    background-repeat: no-repeat;
-}
-
-/* Lol, satt och försökte få det att funka med a'et ivägen */
-#start:hover {
-    background: url(pics/sprite.png) 10px 10px;
-    background-repeat: no-repeat;
-}
-
-#lab:hover {
-    background: url(pics/sprite.png) 10px -86px;
-    background-repeat: no-repeat;
-}
-
-#presentation:hover {
-    background: url(pics/sprite.png) 10px -181px;
-    background-repeat: no-repeat;
-}
-
-#kontakt:hover {
-    background: url(pics/sprite.png) 10px -277px;
-    background-repeat: no-repeat;
 }
