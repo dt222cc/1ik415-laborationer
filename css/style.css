@@ -137,7 +137,7 @@ a:focus {
 #content {
     background-color: white;
     margin-left: 177px;
-    width: 653px;
+    width: 652px;
     padding: 10px;
     border-left: 1px solid black;
 }
@@ -167,16 +167,15 @@ a:focus {
     float: right;
     margin-top: 40px;
 }
-
-#cloud {
-    float: right;
-}
-
 #boatcastle {
     float: left;
     padding-right: 10px;
 }
-
+#social {
+    float: left;
+    margin-top: 190px;
+    margin-left: -70px;
+}
 /*--TABLE--*/
 table, td, th {
     padding: 5px;

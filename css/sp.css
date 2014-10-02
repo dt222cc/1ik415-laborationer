@@ -1,51 +1,40 @@
 /* CSS Mall för smartphones, mindre än 481px bredd. */
-body {
-    margin: 0;
-    padding: 0;
-}
-#container {
-    max-width: 480px;
-    /*float: none;*/
-    padding: 0;
+
+#container, #content, #footer, #nav {
+    width: auto;
+    float: none;
 }
 /*----------*/
 #header {
     width: 100%;
     font-size: 22px;
 }
+/*----------*/
+#nav a {
+    text-align: center;
+    padding-left: 1px;
+}
 
 /*----------*/
 #content {
     margin: 0;
-    padding: 0;
-    width: 100%;
-    float: right;
+    border-left: none;
 }
-
+/*----------*/
 .rightalign {
         text-align: center;
     }
-/*----------*/
+    
 video {
     width: 100%;
 }
 
+h1, h2 {
+    text-align: center;
+}
 /*----------*/
-#footer {
-    width: 100%;
-    font-size: 17px;
-    font-style: italic;
-}
-
-
-#nav ul {
-    float: none;
-    margin-top: -44px;
-    margin-left: 0;
-    height: 155px;
-}
-
-#nav li {
+#social {
     float: none;
     margin: 0;
+    text-align: center;
 }
