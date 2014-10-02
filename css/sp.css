@@ -1,7 +1,12 @@
 /* CSS Mall för smartphones, mindre än 481px bredd. */
+body {
+    margin: 0;
+    padding: 0;
+}
 #container {
     max-width: 480px;
-    float: none;
+    /*float: none;*/
+    padding: 0;
 }
 /*----------*/
 #header {
@@ -17,9 +22,14 @@
     float: right;
 }
 
+.rightalign {
+        text-align: center;
+    }
+/*----------*/
 video {
     width: 100%;
 }
+
 /*----------*/
 #footer {
     width: 100%;

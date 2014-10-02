@@ -8,7 +8,7 @@ Colors      Turkos
 #84b2c3     Table background
 */
 
-/* Fontstil, bakgrund */
+/*--FONT, BACKGROUND--*/
 body {
     font-family: Verdana;
     background-image: url(pics/blue_white_stripes.jpg);
@@ -20,21 +20,15 @@ p {
 
 .rubrik {
     color: #3891B2;
+    margin: 0;
+    margin-top: -15px;
 }
 
-/* Varannan rad färg */
 .alt {
     background-color: #84b2c3;
 }
 
-/* Descriptionlist, dd */
-dd {
-    background-color: #629CB2;
-    display:inline;
-    margin-left: 100px;
-}
-
-/* LINKS */
+/*--LINKS--*/
 a {
     color: #012E3F;
 }
@@ -44,143 +38,134 @@ a:focus {
     color: white;
 }
 
-/* BASEN */
+/*--CONTAINER--*/
 #container {
-    width: 965px;
+    width: 850px;
     background-color: #629CB2;
     margin: 0 auto;
+    border: 1px solid black;
 }
     
-/* HEADER */
+/*--HEADER--*/
 #header {
-    width: 965px;
-    margin-bottom: 50px;
+    width: 100%;
     background-color: #3891B2;
     color: black;
-    font-size: 150%;
+    font-size: 140%;
     text-align: center;
+    border-bottom: 1px solid black;
 }
+    #header h1 {
+        margin: 0;
+        padding-bottom: 10px;
+    }
 
-/* FOOTER */
-#footer {
-    width: 965px;
+/*--FOOTER--*/
+#footer p {
+    width: 100%;
     background-color: #3891B2;
     color: #012E3F;
     text-align: center;
-}
-    
-/* MENY */
-#nav ul {
-    float: left;
-    list-style-type: none;
-    padding: 0;
-    margin-top: -44px;
-    margin-left: 144px;
-    height: 39px;
-}
-
-#nav li {
-    float: left;
-    display: block;
+    font-style: italic;
     margin: 0;
+    border-top: 1px solid black;
+}
+    
+/*--NAVIGATION--*/
+#nav {
+    float: left;
 }
 
-    #nav a {
-       display: block;
-       padding: 10px;
-       color: black;
-       text-decoration: none;
-       padding-left: 40px;
-       padding-right: 32px;
-    }
-    
-    #nav a:hover {
-       background-color: black;
-       color: white;
-    }
-    
-    #nav a:focus {
-        color: white;
-    }
-    
-    #nav .active {
-        background-color: white;
-        color: black;
-    }
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-/* Sprites i menyn */
+#nav a {
+   display: block;
+   padding: 10px;
+   color: black;
+   text-decoration: none;
+   padding-left: 40px;
+   background-image: url(pics/sprite.png);
+   background-repeat: no-repeat;
+   border-bottom: 1px solid black;
+}
+
+#nav a:hover {
+   background-color: black;
+   color: white;
+}
+
+#nav a:focus {
+    color: white;
+}
+
+#nav .active {
+    background-color: white;
+    color: black;
+}
+
+/*--SPRITES(NAVIGATION)--*/
 #start {
-    background: url(pics/sprite.png) 10px -38px;
-    background-repeat: no-repeat;
+    background-position: 10px -38px;
 }
-
 #lab {
-    background: url(pics/sprite.png) 10px -134px;
-    background-repeat: no-repeat;
+    background-position: 10px -134px;
 }
-
 #presentation {
-    background: url(pics/sprite.png) 10px -229px;
-    background-repeat: no-repeat;
+    background-position: 10px -229px;
 }
-
 #kontakt {
-    background: url(pics/sprite.png) 10px -325px;
-    background-repeat: no-repeat;
+    background-position: 10px -325px;
 }
-
 #start:hover {
-    background: url(pics/sprite.png) 10px 10px;
-    background-repeat: no-repeat;
+    background-position: 10px 10px;
 }
-
 #lab:hover {
-    background: url(pics/sprite.png) 10px -86px;
-    background-repeat: no-repeat;
+    background-position: 10px -86px;
 }
-
 #presentation:hover {
-    background: url(pics/sprite.png) 10px -181px;
-    background-repeat: no-repeat;
+    background-position: 10px -181px;
+}
+#kontakt:hover {
+    background-position: 10px -277px;
 }
 
-#kontakt:hover {
-    background: url(pics/sprite.png) 10px -277px;
-    background-repeat: no-repeat;
-} /* MENY STOPP */ 
-
-/* INNEHÅLL */
+/*--CONTENT--*/
 #content {
     background-color: white;
-    margin-left: 144px;
-    width: 650px;
+    margin-left: 177px;
+    width: 653px;
     padding: 10px;
-    margin-right: auto;
+    border-left: 1px solid black;
 }
-
     /* Varje inlägg har dashed på toppen */
     .section {
         border-top: dashed;
     }
-    
     /* Blogginlägg har en bildikon åt vänster om rubriktexten */
     .post {
         border-top: dashed;
         background-image: url(pics/pen_o.png);
         background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 50px 50px;
+        background-position: 10px 27px;
     }
-    
     /* Behövde flytta rubriken för varje inlägg lite åt höger för att få det att funka (med penn ikonen) */
     .post h2 {
         padding-left: 50px;
     }
+    /* Skrivet av... och datum */
+    .rightalign {
+        text-align: right;
+        font-style: italic;
+    }
 
-/* BILDER */
+/*--PICTURES--*/
 #mig {
     float: right;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 #cloud {
@@ -192,7 +177,7 @@ a:focus {
     padding-right: 10px;
 }
 
-/* TABELL */
+/*--TABLE--*/
 table, td, th {
     padding: 5px;
     border: 1px solid #629CB2;
@@ -203,13 +188,12 @@ th tfoot{
     background-color: #629CB2;
 }
 
-
 .rowspan {
     font-size: 1.5em;
     background-color: white;
 }
 
-/* FORMULÄR */
+/*--FORMS--*/
 form {
     width: 450px;
     margin: 0 auto;
