@@ -41,6 +41,7 @@ h1, h2 {
 
 dl, ol {
      font-size: 15px;
+     word-wrap: break-word;
 }
 /*----------*/
 #mig {
@@ -55,4 +56,8 @@ form {
 table, td, th {
     width: 100%;
     font-size: 15px;
+}
+
+#table {
+    overflow-x:scroll;
 }
