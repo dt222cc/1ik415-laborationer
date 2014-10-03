@@ -10,6 +10,12 @@
     font-size: 22px;
 }
 /*----------*/
+#social {
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+/*----------*/
 #nav a {
     text-align: center;
     padding-left: 1px;
@@ -22,8 +28,8 @@
 }
 /*----------*/
 .rightalign {
-        text-align: center;
-    }
+    text-align: center;
+}
     
 video {
     width: 100%;
@@ -32,13 +38,21 @@ video {
 h1, h2 {
     text-align: center;
 }
-/*----------*/
-#social {
-    float: none;
-    margin: 0;
-    text-align: center;
+
+dl, ol {
+     font-size: 15px;
 }
 /*----------*/
 #mig {
     margin-top: 40px;
+}
+/*----------*/
+form {
+    width: 100%;
+    margin: 0;
+}
+/*----------*/
+table, td, th {
+    width: 100%;
+    font-size: 15px;
 }

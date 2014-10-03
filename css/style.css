@@ -161,7 +161,14 @@ a:focus {
         text-align: right;
         font-style: italic;
     }
-
+    
+    #absoluta dd{
+        background-color: #629CB2;
+        display: inline;
+    }
+    dl {
+        margin: 0;
+    }
 /*--PICTURES--*/
 #mig {
     float: right;
@@ -206,7 +213,7 @@ fieldset {
 }
 
 legend {
-    background-color: #629CB2;
+    background-color: white;
     font-size: 1.2em;
 }
 
