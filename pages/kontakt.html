@@ -35,33 +35,35 @@
                     <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" id="form" method="post">
                         
                         <fieldset>
-                            <legend>Ärende</legend>
-                            <label>Ärendetyp <select name="arendetyp">  <!-- Är det ok att använda åäö? för "name" och "value" -->
-                                <option value="fraga">Fråga</option>
-                                <option value="tips">Tips</option></select>
-                            </label>
+                                <legend>Ärende</legend>
+                            <fieldset>
+                                <label>Ärendetyp: <select name="subject">
+                                    <option value="fraga">Fråga</option>
+                                    <option value="tips">Tips</option></select>
+                                </label>
+                            <br />
+                                <label>Rubrik:<input type="text" name="topic" placeholder="Topic" /></label><br />
+                                <label>Skriv här:</label><br />
+                                <textarea name="text" rows="4" cols="40" placeholder="Message" ></textarea>
+                            </fieldset>
                             
-                            <br /><label>Rubrik:<input type="text" name="rubrik" /></label><br />
-                            <label>Skriv här:</label><br />
-                            <textarea name="text" rows="4" cols="40"></textarea>
-                        </fieldset>
-                        
-                        <fieldset>
-                            <legend>Information om dig</legend>
+                            <fieldset>
+                                <legend>Om dig</legend>
+                                
+                                <label>Namn:<br /><input type="text" name="name" placeholder="Name" /></label><br />
+                                <label>Epost:<br /><input type="email" name="email" placeholder="E-mail" /></label><br />
+                                <label>Telefon:<br /><input type="tel" name="tel" placeholder="Phone" /></label>
+                            </fieldset>
                             
-                            <label>Namn:<br /><input type="text" name="namn" /></label><br />
-                            <label>Epost:<br /><input type="email" name="epost" /></label><br />
-                            <label>Telefon:<br /><input type="text" name="telefon" /></label><br />
+                            <fieldset id="via" class="check">
+                                <legend>Kontaktas via</legend>
+                                
+                                <label><input type="checkbox" name="by email" />Epost</label><br />
+                                <label><input type="checkbox" name="by tel" />Telefon</label>
+                            </fieldset>
+                
+                            <input type="submit" value="Skicka!" />
                         </fieldset>
-                        
-                        <fieldset>
-                            <legend>Kontakta mig via</legend>
-                            
-                            <label><input type="checkbox" name="via epost" />Epost</label><br />
-                            <label><input type="checkbox" name="via telefon" />Telefon</label><br />
-                        </fieldset>
-            
-                        <input type="submit" value="Skicka!" />
                     </form>
                 </div>
             </div>
