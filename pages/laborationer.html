@@ -16,36 +16,37 @@
     <body>
         <div id="container">
         
-            <div id="header"><h1>Sing Trinh #WPLNU 2014</h1></div>
+            <header><h1>Sing Trinh #WPLNU 2014</h1></header>
             
-            <div id="nav">
+            <nav>
                 <ul>
                     <li><a id="start" href="../index.html">Start</a></li>
                     <li><a id="lab" class="active" href="laborationer.html">Laborationer</a></li>
                     <li><a id="presentation" href="presentation.html">Presentation</a></li>
                     <li><a id="kontakt" href="kontakt.html">Kontakt</a></li>
                 </ul>
-            </div>
+            </nav>
             
-            <div id="social">
+            <aside id="social">
                 <a href="https://twitter.com/dstrinh"><img src="../pics/twitter_cloud.png" alt="My Twitter" /></a>
-            </div>
+            </aside>
             
-            <div id="content">
+            <main id="content">
             
-                <h1 class="rubrik">Laborationer</h1>
+                <h1>Laborationer</h1>
                 
-                <div class="section">
+                <section>
                 <h2>Webbteknisk introduktion</h2>
                     <ul>
                         <li><a href="#labb1">Laboration 1</a></li>
                         <li><a href="#labb2">Laboration 2</a></li>
                         <li><a href="#labb3">Laboration 3</a></li>
                         <li><a href="#labb4">Laboration 4</a></li>
+                        <li><a href="#labb5">Laboration 5</a></li>
                     </ul>
-                </div>    
+                </section>    
                     
-                <div class="section">
+                <section>
                 <h2 id="tabell">Resultat</h2>
                     <div id="table">
                         <table>
@@ -139,23 +140,32 @@
                                 </tr>
                     <!--Labb 4-->
                                 <tr>
-                                    <td>4</td><td>1</td><td>Arbetar</td><td></td>
+                                    <td class="rowspan" rowspan ="1">4</td>
+                                    <td>1</td><td>Färdig</td><td>2014-10-06</td>
                                 </tr>
                     <!--Labb 5-->
+                                <tr class="alt">
+                                    <td class="rowspan" rowspan ="3">5</td>
+                                    <td>1</td><td>Arbetar</td><td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td><td>Ej påbörjad</td><td></td>
+                                </tr>
+                                <tr class="alt">
+                                    <td>3</td><td>Ej Påbörjad</td><td></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-                
-                <br />
-                
-                <div class="section">
-                <h3 id="labb1">Laboration 1</h3>
+                </section>
+                    <br />
+                <section>
+                <h3 id="labb1">#1 Struktur och innehåll</h3>
                     <p>Uppgifter:</p>
                     <ol>
                         <li>www-katalog</li>
                         <li><a href="https://coursepress.lnu.se/kurs/webbteknisk-introduktion/laborationer/l01-struktur-och-innehall/">Ett första dokument</a></li>
-                        <li>Startsidan</li>
+                        <li><a href="../index.html">Startsidan</a></li>
                         <li>
                             <div id="absoluta">
                             <dl>
@@ -205,10 +215,10 @@
                             </ul>
                         </li>
                     </ol>
-                </div>
+                </section>
                 
-                <div class="section">
-                <h3 id="labb2">Laboration 2</h3>
+                <section>
+                <h3 id="labb2">#2 En stiligare portal</h3>
                     <p>Uppgifter:</p>
                     <ol>
                         <li>Använda stilmallar
@@ -252,10 +262,10 @@
                             </ul>
                         </li>
                     </ol>
-                </div>
+                </section>
                 
-                <div class="section">
-                <h3 id="labb3">Laboration 3</h3>
+                <section>
+                <h3 id="labb3">#3 Copycat</h3>
                     <p>Uppgifter:</p>
                     <ol>
                         <li>Stila formuläret
@@ -284,32 +294,55 @@
                             </ul>
                         </li>
                     </ol>
-                </div>
+                </section>
                 
-                <div class="section">
-                <h3 id="labb4">Laboration 4</h3>
+                <section>
+                <h3 id="labb4">#4 Mobil enheter</h3>
                     <p>Uppgifter:</p>
                     <ol>
                         <li>En mobilare portal
                             <ul>
-                                <li>Du ska skapa en anpassad stilmall för skärmar smalare än 481 pixlar.</li>
-                                <li>Samtliga sidor på din laborationsportal ska ha den anpassade stilmallen.</li>
-                                <li>Den ordinarie stilmallen ska fortfarande användas om man går in med en enhet bredare än 480px.</li>
-                                <li>När användaren surfar in med en smartphone så ska man inte behöva zooma på sidan.</li>
-                                <li>Användaren ska inte behöva skrolla i x-led (horisontell skrollning. Dock är det tillåtet för t.ex. tabellen på laborationssidan).</li>
-                                <li>Om användaren väljer att spara din sajt som en genväg från hemskärmen i iOS så ska du erbjuda en speciell ikon för detta.</li>
-                                <li>Arbeta igenom formuläret så att det lämpar sig för mobila enheter.</li>
-                                <li>Utöver ovanstående ska din sida förses med en så kallad "favicon". </li>
+                                <li>Stilmall för skärmar smalare än 481 pixlar.</li>
+                                <li>Den ordinarie stilmallen används forfarande om man går in med en enhet bredare än 480px.</li>
+                                <li>Man behöver inte zooma på sidan.</li>
+                                <li>Användaren behöver inte skrolla i x-led. Förutom tabellen på laborationssidan.</li>
+                                <li>Användaren kan spara sajten som en genväg från hemskärmen i iOS
+                                    (Det var ett problem med detta, ska fixa det när jag har tid över).</li>
+                                <li>Formuläret är lämplad för mobila enheter (types).</li>
+                                <li>Sida har en så kallad "favicon".</li>
                             </ul>
                         </li>
                     </ol>
-                </div>
-            </div>
+                </section>
+                
+                <section>
+                <h3 id="labb5">#5 HTML5/CSS3</h3>
+                    <p>Uppgifter:</p>
+                    <ol>
+                        <li>Sidstruktur
+                            <ul>
+                                <li>Header, Footer, Article, Aside, Main, Section, Nav</li>
+                            </ul>
+                        </li>
+                        <li>Mikroformat
+                            <ul>
+                                <li>Infoga ett hCard om dig själv på bloggen. <a href="http://microformats.org/code/hcard/creator">http://microformats.org/code/hcard/creator</a></li>
+                                <li>Testa så att googles sökmotor kan se ditt hCard genom att använda <a href="http://www.google.com/webmasters/tools/richsnippets">http://www.google.com/webmasters/tools/richsnippets</a></li>
+                            </ul>
+                        </li>
+                        <li>Fotogalleri
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+                
+            </main>
         
-            <div id="footer">
+            <footer>
                 <p>Ansvarig för materialet på denna sida är Da Sing Trinh.</p>
-            </div>
-            
+            </footer>
         </div>  
     </body>
 </html>

@@ -18,12 +18,6 @@ p {
     line-height: 28px;
 }
 
-.rubrik {
-    color: #3891B2;
-    margin: 0;
-    margin-top: -15px;
-}
-
 .alt {
     background-color: #84b2c3;
 }
@@ -47,7 +41,7 @@ a:focus {
 }
     
 /*--HEADER--*/
-#header {
+header {
     width: 100%;
     background-color: #3891B2;
     color: black;
@@ -55,13 +49,13 @@ a:focus {
     text-align: center;
     border-bottom: 1px solid black;
 }
-    #header h1 {
+    header h1 {
         margin: 0;
         padding-bottom: 10px;
     }
 
 /*--FOOTER--*/
-#footer p {
+footer p {
     width: 100%;
     background-color: #3891B2;
     color: #012E3F;
@@ -72,17 +66,17 @@ a:focus {
 }
     
 /*--NAVIGATION--*/
-#nav {
+nav {
     float: left;
 }
 
-#nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-#nav a {
+nav a {
    display: block;
    padding: 10px;
    color: black;
@@ -93,16 +87,16 @@ a:focus {
    border-bottom: 1px solid black;
 }
 
-#nav a:hover {
+nav a:hover {
    background-color: black;
    color: white;
 }
 
-#nav a:focus {
+nav a:focus {
     color: white;
 }
 
-#nav .active {
+nav .active {
     background-color: white;
     color: black;
 }
@@ -134,7 +128,7 @@ a:focus {
 }
 
 /*--CONTENT--*/
-#content {
+main {
     background-color: white;
     margin-left: 177px;
     width: 652px;
@@ -142,18 +136,18 @@ a:focus {
     border-left: 1px solid black;
 }
     /* Varje inlägg har dashed på toppen */
-    .section {
+    section {
         border-top: dashed;
     }
     /* Blogginlägg har en bildikon åt vänster om rubriktexten */
-    .post {
+    article {
         border-top: dashed;
         background-image: url(pics/pen_o.png);
         background-repeat: no-repeat;
         background-position: 10px 27px;
     }
     /* Behövde flytta rubriken för varje inlägg lite åt höger för att få det att funka (med penn ikonen) */
-    .post h2 {
+    article h2 {
         padding-left: 50px;
     }
     /* Skrivet av... och datum */
@@ -169,6 +163,7 @@ a:focus {
     dl {
         margin: 0;
     }
+
 /*--PICTURES--*/
 #mig {
     float: right;
@@ -178,7 +173,7 @@ a:focus {
     float: left;
     padding-right: 10px;
 }
-#social {
+aside {
     float: left;
     margin-top: 190px;
     margin-left: -70px;

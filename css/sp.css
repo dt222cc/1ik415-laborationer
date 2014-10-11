@@ -1,23 +1,23 @@
 /* CSS Mall för smartphones, mindre än 481px bredd. */
 
-#container, #content, #footer, #nav {
+#container, #content, footer, nav {
     width: auto;
     float: none;
     font-size: 15px;
 }
 
-#header {
+header {
     width: 100%;
     font-size: 22px;
 }
 
-#social {
+aside {
     float: none;
     margin: 0;
     text-align: center;
 }
 /* Navigation*/
-#nav a {
+nav a {
     text-align: center;
     padding-left: 1px;
     font-size: 22px;
@@ -43,11 +43,6 @@ h1 {
 
 h2 {
     font-size: 30px;
-}
-
-.rubrik {
-    font-size: 40px;
-
 }
 
 dl, ol, legend {
