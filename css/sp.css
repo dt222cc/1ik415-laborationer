@@ -66,6 +66,15 @@ table, td, th {
     overflow-x:scroll;
 }
 /* Kontakt */
+form {
+    margin: 0 auto;
+}
+
+.form {
+    text-align: center;
+    padding-left: 0;
+}
+
 input[type=checkbox] {
     width: 44px; height: 44px;
 }
