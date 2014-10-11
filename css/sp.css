@@ -48,6 +48,11 @@ h2 {
 dl, ol, legend {
      word-wrap: break-word;
 }
+
+/* Startsida */
+article article {
+        width: auto;
+    }
 /* Presentation */
 #mig {
     margin-top: 40px;

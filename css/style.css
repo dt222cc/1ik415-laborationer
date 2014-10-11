@@ -135,35 +135,57 @@ main {
     padding: 10px;
     border-left: 1px solid black;
 }
-    /* Varje inlägg har dashed på toppen */
-    section {
-        border-top: dashed;
-    }
-    /* Blogginlägg har en bildikon åt vänster om rubriktexten */
-    article {
-        border-top: dashed;
-        background-image: url(pics/pen_o.png);
-        background-repeat: no-repeat;
-        background-position: 10px 27px;
-    }
-    /* Behövde flytta rubriken för varje inlägg lite åt höger för att få det att funka (med penn ikonen) */
-    article h2 {
-        padding-left: 50px;
-    }
-    /* Skrivet av... och datum */
-    .rightalign {
-        text-align: right;
-        font-style: italic;
-    }
-    
-    #absoluta dd{
-        background-color: #629CB2;
-        display: inline;
-    }
-    dl {
-        margin: 0;
-    }
+/* Varje inlägg har dashed på toppen */
+section {
+    border-top: dashed;
+}
+/* Blogginlägg har en bildikon åt vänster om rubriktexten */
+article {
+    border-top: dashed;
+    background-image: url(pics/pen_o.png);
+    background-repeat: no-repeat;
+    background-position: 10px 27px;
+}
+/* Behövde flytta rubriken för varje inlägg lite åt höger för att få det att funka (med penn ikonen) */
+article h2 {
+    padding-left: 50px;
+}
+/* Skrivet av... och datum */
+.rightalign {
+    text-align: right;
+    font-style: italic;
+}
 
+article article {
+    background-image: none;
+    background-color: #3891B2;
+    font-size: 16px;
+    border: none;
+    width: 250px;
+    padding: 0 5px 0 5px;
+    margin: 0 10px 20px 50px;
+}
+
+article article p {
+    margin-top: -20px;
+}
+
+article footer p {
+    display: inline;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    padding: 0 5px 0 5px;
+}
+
+#absoluta dd{
+    background-color: #629CB2;
+    display: inline;
+}
+dl {
+    margin: 0;
+}
+/*--CONTENT END--*/
 /*--PICTURES--*/
 #mig {
     float: right;
