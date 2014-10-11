@@ -8,6 +8,12 @@ Colors      Turkos
 #84b2c3     Table background
 */
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 /*--FONT, BACKGROUND--*/
 body {
     font-family: Verdana;
