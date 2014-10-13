@@ -1,5 +1,9 @@
 /*font-family: 'Shadows Into Light';*/
 
+body {
+    
+}
+
 #container {
     max-width: 1200px;
     width: auto;
@@ -14,7 +18,7 @@
     width: 200px;
     float: left;
     margin: 7px;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 25px 10px;
     background-color: white;
     z-index: 1;     
     position: relative;
@@ -26,11 +30,15 @@
     box-shadow: 10px 10px 30px;
     transition: all 1s;
     text-decoration: none;
+    text-shadow: 2px 2px 2px;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* Justerar så att bildens storlek passar länken (width: x;). */
 #image a img {
     width: 100%;
+    padding-bottom: 10px;
 }
 
 /* Var tredje bild. */
@@ -65,7 +73,7 @@
 /* Sido text. */
 #side {
     float: right;
-    height: 300px;
+    height: 310px;
     font-size: 10px;
 }
 
