@@ -1,7 +1,7 @@
-/*font-family: 'Shadows Into Light';*/
-
+/*font-family: 'Sacramento', cursive;*/
 body {
-    
+    font-family: 'Sacramento', cursive;
+    background-image: url(pics/blue_white_stripes.jpg);
 }
 
 #container {
@@ -33,6 +33,7 @@ body {
     text-shadow: 2px 2px 2px;
     font-size: 20px;
     text-align: center;
+    color: #012E3F;
 }
 
 /* Justerar så att bildens storlek passar länken (width: x;). */
@@ -57,6 +58,7 @@ body {
     -o-transform: rotate(15deg) scale(1.2);
     -moz-transform: rotate(15deg) scale(1.2);
     transform: rotate(15deg) scale(1.2);
+    z-index: 2;
 }
 
 /* Muspekare över bild och tabb. */
@@ -73,12 +75,8 @@ body {
 /* Sido text. */
 #side {
     float: right;
-    height: 310px;
-    font-size: 10px;
-}
-
-#side li {
-    font-size: 12px;
+    height: 400px;
+    font-size: 13px;
 }
 
 #groupTwo {
