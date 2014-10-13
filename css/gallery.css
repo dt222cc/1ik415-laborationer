@@ -1,43 +1,64 @@
 /* Hm... använder jag google font på fel sätt? */
+
 html {
     font-family: 'Shadows Into Light';
 }
 
 #container {
     max-width: 1200px;
-    width: 100%; height: 1500px;
+    width: auto;
+    height: 1500px;
     margin: 0 auto;
     padding: 50px;
+    background-color: transparent;
+    border: none;
 }
 
-#images a {
-    width: 250px;
+#image a {
+    width: 200px;
     float: left;
-    margin: 10px;
+    margin: 7px;
     padding: 10px 10px 30px 10px;
     background-color: white;
     z-index: 1;     
     position: relative;
-    -webkit-transform: rotate(0deg) scale(1.5);
-    -ms-transform: rotate(0deg) scale(1.5);
-    -o-transform: rotate(0deg) scale(1.5);
-    -moz-transform: rotate(0deg) scale(1.5);
+    -webkit-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
     transform: rotate(5deg);
-    box-shadow: 14px 14px 20px;
+    box-shadow: 10px 10px 30px;
     transition: all 1s;
 }
 
-#images a img {
+#image a img {
     width: 100%;
 }
 
-#images a:hover {
-    -webkit-transform: rotate(0deg) scale(1.5);
-    -ms-transform: rotate(0deg) scale(1.5);
-    -o-transform: rotate(0deg) scale(1.5);
-    -moz-transform: rotate(0deg) scale(1.5);
-    transform: rotate(0deg) scale(1.5);
-    z-index: 2;
+#image a:nth-child(3n) {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+#image a:nth-child(5n) {
+    -webkit-transform: rotate(15deg) scale(1.2);
+    -ms-transform: rotate(15deg) scale(1.2);
+    -o-transform: rotate(15deg) scale(1.2);
+    -moz-transform: rotate(15deg) scale(1.2);
+    transform: rotate(15deg) scale(1.2);
+}
+
+#image a:hover, #image a:focus {
+    -webkit-transform: rotate(0deg) scale(1.8);
+    -ms-transform: rotate(0deg) scale(1.8);
+    -o-transform: rotate(0deg) scale(1.8);
+    -moz-transform: rotate(0deg) scale(1.8);
+    transform: rotate(0deg) scale(1.8);
+    z-index: 5;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.50);
 }
 
 #side {
@@ -49,3 +70,10 @@ html {
 #groupTwo {
     float: left;
 }
+
+/* Har inte använt
+:after
+attr()
+content
+font-family
+*/
