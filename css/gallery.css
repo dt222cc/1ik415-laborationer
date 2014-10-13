@@ -18,6 +18,10 @@ html {
     background-color: white;
     z-index: 1;     
     position: relative;
+    -webkit-transform: rotate(0deg) scale(1.5);
+    -ms-transform: rotate(0deg) scale(1.5);
+    -o-transform: rotate(0deg) scale(1.5);
+    -moz-transform: rotate(0deg) scale(1.5);
     transform: rotate(5deg);
     box-shadow: 14px 14px 20px;
     transition: all 1s;
@@ -28,6 +32,10 @@ html {
 }
 
 #images a:hover {
+    -webkit-transform: rotate(0deg) scale(1.5);
+    -ms-transform: rotate(0deg) scale(1.5);
+    -o-transform: rotate(0deg) scale(1.5);
+    -moz-transform: rotate(0deg) scale(1.5);
     transform: rotate(0deg) scale(1.5);
     z-index: 2;
 }
