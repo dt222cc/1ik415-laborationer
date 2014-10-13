@@ -1,8 +1,4 @@
-/* Hm... använder jag google font på fel sätt? */
-
-html {
-    font-family: 'Shadows Into Light';
-}
+/*font-family: 'Shadows Into Light';*/
 
 #container {
     max-width: 1200px;
@@ -29,12 +25,15 @@ html {
     transform: rotate(5deg);
     box-shadow: 10px 10px 30px;
     transition: all 1s;
+    text-decoration: none;
 }
 
+/* Justerar så att bildens storlek passar länken (width: x;). */
 #image a img {
     width: 100%;
 }
 
+/* Var tredje bild. */
 #image a:nth-child(3n) {
     -webkit-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
@@ -43,6 +42,7 @@ html {
     transform: rotate(-10deg);
 }
 
+/* Var femte bild. */
 #image a:nth-child(5n) {
     -webkit-transform: rotate(15deg) scale(1.2);
     -ms-transform: rotate(15deg) scale(1.2);
@@ -51,6 +51,7 @@ html {
     transform: rotate(15deg) scale(1.2);
 }
 
+/* Muspekare över bild och tabb. */
 #image a:hover, #image a:focus {
     -webkit-transform: rotate(0deg) scale(1.8);
     -ms-transform: rotate(0deg) scale(1.8);
@@ -61,19 +62,22 @@ html {
     box-shadow: 20px 20px 60px rgba(0,0,0,0.50);
 }
 
+/* Sido text. */
 #side {
     float: right;
     height: 300px;
     font-size: 10px;
 }
 
+#side li {
+    font-size: 12px;
+}
+
 #groupTwo {
     float: left;
 }
 
-/* Har inte använt
-:after
-attr()
-content
-font-family
-*/
+/* Text efter länken (bilden). */
+a[title]:after {
+    content:attr(title);
+}
