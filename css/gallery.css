@@ -1,6 +1,8 @@
 body {
     font-family: 'Kranky';
     background-image: url(pics/blue_white_stripes.jpg);
+    font-weight: bold;
+    font size:; 40px;
 }
 
 #container {
