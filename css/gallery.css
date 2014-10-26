@@ -15,8 +15,6 @@ body {
     height: 1500px;
     margin: 0 auto;
     padding: 50px;
-    background-color: transparent;
-    border: none;
 }
 
 #image a {
@@ -84,6 +82,7 @@ body {
     font-size: 15px;
 }
 
+/* Sveriges sju underverk börjar på ny rad. */
 #groupTwo {
     float: left;
 }
